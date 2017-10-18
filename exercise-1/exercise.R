@@ -25,3 +25,11 @@
 
 # Using the `all` and `%%` operators, confirm that all of the numbers in your `odd` vector are odd
 
+first.ten <- 10:20
+next.ten <- seq(21:30)
+all.numbers <- c(first.ten, next.ten)
+eleventh <- all.numbers[11]
+some.numbers <- all.numbers[2:5]
+len <- length(all.numbers)
+odd <- seq(1, 100, 2)
+test <- all(odd %% 2 == 1)
