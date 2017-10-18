@@ -1,6 +1,26 @@
-# Exercise-1
-In this exercise, you'll practice creating and indexing vectors in R.
+# Exercise 1: Creating and Indexing Vectors
 
-As in previous exercises, you should fork and clone this repository,
-follow the instructions in the `exercise.R` file, then `add` and
-`commit` your changes so that you can `push` them back up to GitHub.
+# Create a vector `first.ten` that has the values 10 through 20 in it (using the : operator)
+first.ten <- 10:20 
+
+# Create a vector `next.ten` that has the values 21 through 30 in it (using the seq operator)
+next.ten <- seq(21:30)
+
+# Create a vector `all.numbers` by combining the vectors `first.ten` and `next.ten`
+all.numbers <- c(first.ten,next.ten)
+
+# Create a variable `eleventh` that is equal to the 11th element in your vector `all.numbers`
+elventh <- all.numbers[11]
+
+# Create a vector `some.numbers` that is equal to the second through the 5th elements of `all.numbers`
+some.numbers <- all.numbers[2:5]
+
+# Create a variable `len` that is equal to the length of your vector `all.numbers`
+len <- length(all.numbers)
+
+### Bonus ###
+
+# Create a vector `odd` that holds the odd numbers from 1 to 100
+odd <- seq(1, 100, 2)
+
+# Using the `all` and `%%` operators, confirm that all of the numbers in your `odd` vector are odd
